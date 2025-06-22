@@ -11,6 +11,6 @@ COPY . .
 # Switch to the non-privileged user to run the application.
 USER appuser
 
-ENV CLASSPATH .:dist/*
+ENV CLASSPATH .:cores/*
 
 CMD ["java", "-server", "-Dnet.sf.odinms.wzpath=wz/", "server.Start"]
