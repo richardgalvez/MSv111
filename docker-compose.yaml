@@ -3,7 +3,7 @@ services:
     image: mysql:9.3.0
     container_name: v111-mysql
     environment:
-      MYSQL_ROOT_PASSWORD: snailshe11
+      MYSQL_ROOT_PASSWORD: snailshell
       MYSQL_DATABASE: v111
       MYSQL_USER: ms-user
       MYSQL_PASSWORD: shell
