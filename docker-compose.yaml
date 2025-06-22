@@ -5,8 +5,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: snailshell
       MYSQL_DATABASE: v111
-      MYSQL_USER: ms-user
-      MYSQL_PASSWORD: shell
+      # MYSQL_USER: ms-user
+      # MYSQL_PASSWORD: shell
     ports:
       - "3306:3306"
     volumes:
