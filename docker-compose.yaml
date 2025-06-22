@@ -1,7 +1,7 @@
 services:
   db:
     image: mysql:9.3.0
-    container_name: v111-mysql
+    container_name: v111-db
     environment:
       MYSQL_ROOT_PASSWORD: snailshell
       MYSQL_DATABASE: v111
@@ -11,6 +11,16 @@ services:
       - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
+  server:
+    container_name: v111-server
+    build: .
+    depends_on:
+      - db
+    ports:
+      # Main gameserver port
+      - "8484:8484"
+      # Two channels
+      - "7575-7576:7575-7576"
 
 volumes:
   db_data:
