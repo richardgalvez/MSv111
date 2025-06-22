@@ -1,0 +1,16 @@
+services:
+  db:
+    image: mysql:9.3.0
+    container_name: v111-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: snailshe11
+      MYSQL_DATABASE: v111
+      MYSQL_USER: ms-user
+      MYSQL_PASSWORD: shell
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
