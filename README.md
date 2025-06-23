@@ -6,15 +6,11 @@ Easier deployment for v111 server emulator based on [this version of the Lithium
 
 ## To-Do
 
-- Docker Compose file for MySQL database container.
-
-  - Must be able to populate DB using provided scripts.
-
-- Docker container to build Java container.
-
-  - Might require Java Cryptographic Extension (JCE) files?
+- Docker container to build Java server application.
 
   - Add to Docker compose file.
+
+- Custom environment properties/parameters (server configs, rates, etc.) with Docker Compose, so no direct changes to app code need.
 
 ## Resources
 
